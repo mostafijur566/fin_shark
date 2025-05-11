@@ -48,5 +48,20 @@ namespace api.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetById), new {id = stockModel.Id}, stockModel.toStockDto());
         }
+
+         [HttpDelete("{id}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            var stock = _context.Stock.Find(id);
+
+            if(stock == null) {
+                return NotFound();
+            }
+
+            _context.Stock.Remove(stock);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
