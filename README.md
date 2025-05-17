@@ -28,7 +28,7 @@ This project follows the YouTube tutorial series by [Raw Coding](https://www.you
 
 ```bash
 git clone https://github.com/mostafijur566/fin_shark.git
-cd FinShark
+cd FinShark/api
 dotnet restore
 dotnet ef database update   # If using Entity Framework
 dotnet run
