@@ -169,3 +169,9 @@ D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\ASP\FinShark\api\bin\Debug\net9.0\Newtonsoft.Json.dll
 D:\ASP\FinShark\api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\ASP\FinShark\api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
