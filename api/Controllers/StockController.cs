@@ -7,6 +7,8 @@ using api.Dtos.Stock;
 using api.Helpers;
 using api.Interfaces;
 using api.Mappers;
+using api.Models;
+using api.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,7 +32,9 @@ namespace api.Controllers
             var stocks = await _stockRepo.GetAllAsync(query);
             var stockDto = stocks.Select(s => s.toStockDto());
 
-            return Ok(stockDto);
+            var response = new PagedResponse<StockDto>(stockDto.ToList(), query.PageNumber, query.PageSize);
+
+            return Ok(response);
         }
 
         [HttpGet("{id:int}")]
